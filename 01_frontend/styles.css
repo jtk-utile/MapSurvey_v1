@@ -1,11 +1,10 @@
 @font-face {
     font-family: 'Union';
-    src: url('01_frontend\fonts\union_regular.otf') format('opentype');
+    src: url('fonts\union_regular.otf') format('opentype');
     /* Add additional font formats if available */
     font-weight: normal;
     font-style: normal;
 }
-
 
 body {
     font-family: 'Union', sans-serif;
@@ -13,6 +12,22 @@ body {
     padding: 0;
     text-align: center;
 }
+
+/* Style the link */
+#logo-link {
+    position: absolute; /* Ensures it's positioned relative to the page */
+    top: 10px; /* Distance from the top of the page */
+    left: 10px; /* Distance from the left of the page */
+    z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+/* Style the image */
+#logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Maintains aspect ratio */
+    cursor: pointer; /* Indicates the image is clickable */
+}
+
 
 h1 {
     margin-top: 20px;
