@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Union';
+    src: url('01_frontend\fonts\union_regular.otf') format('opentype');
+    /* Add additional font formats if available */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Union', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
