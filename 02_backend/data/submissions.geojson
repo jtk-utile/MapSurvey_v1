@@ -2,12 +2,11 @@
 "type": "FeatureCollection",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-{ "type": "Feature", "properties": { "comment": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -71.026955, 42.402129 ], [ -71.024981, 42.39934 ], [ -71.033821, 42.396805 ], [ -71.033306, 42.400988 ], [ -71.026955, 42.402129 ] ] ] } },
-{ "type": "Feature", "properties": { "comment": null }, "geometry": { "type": "Point", "coordinates": [ -71.035538, 42.399815 ] } },
-{ "type": "Feature", "properties": { "comment": null }, "geometry": { "type": "Point", "coordinates": [ -71.032448, 42.402161 ] } },
-{ "type": "Feature", "properties": { "comment": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -71.029444, 42.398421 ], [ -71.022406, 42.393921 ], [ -71.028585, 42.391702 ], [ -71.033821, 42.394745 ], [ -71.029444, 42.398421 ] ] ] } },
-{ "type": "Feature", "properties": { "comment": null }, "geometry": { "type": "Point", "coordinates": [ -71.024551, 42.398928 ] } },
-{ "type": "Feature", "properties": { "comment": null }, "geometry": { "type": "Point", "coordinates": [ -71.037683, 42.402731 ] } },
-{ "type": "Feature", "properties": { "comment": "joey!" }, "geometry": { "type": "Point", "coordinates": [ -71.025152, 42.399344 ] } }
+{ "type": "Feature", "properties": { "comment": "joey" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -71.030045, 42.400675 ], [ -71.027813, 42.393829 ], [ -71.034851, 42.390977 ], [ -71.035194, 42.397696 ], [ -71.030045, 42.400675 ] ] ] } },
+{ "type": "Feature", "properties": { "comment": "joey2" }, "geometry": { "type": "Point", "coordinates": [ -71.043348, 42.401309 ] } },
+{ "type": "Feature", "properties": { "comment": "joey 2" }, "geometry": { "type": "Point", "coordinates": [ -71.040173, 42.397316 ] } },
+{ "type": "Feature", "properties": { "comment": "sdf" }, "geometry": { "type": "Point", "coordinates": [ -71.028414, 42.394653 ] } },
+{ "type": "Feature", "properties": { "comment": "wq" }, "geometry": { "type": "Point", "coordinates": [ -71.039057, 42.3989 ] } },
+{ "type": "Feature", "properties": { "comment": "palante" }, "geometry": { "type": "Point", "coordinates": [ -71.031504, 42.399724 ] } }
 ]
 }

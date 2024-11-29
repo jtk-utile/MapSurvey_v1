@@ -1,3 +1,4 @@
+
 // Initialize the map
 const map = L.map('map').setView([42.396680895764796, -71.03147400302397], 14); // Adjust coordinates for your starting position
 
@@ -10,6 +11,7 @@ L.tileLayer(`https://api.maptiler.com/tiles/cdf1b0ea-4162-4a6d-bbad-95d66f6163bd
     attribution: '© <a href="https://www.maptiler.com/copyright/" target="_blank">MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>',
     crossOrigin: true
 }).addTo(map);
+
 
 // Initialize the feature group to store drawn layers
 const drawnItems = new L.FeatureGroup();
@@ -25,7 +27,7 @@ const drawControl = new L.Control.Draw({
         polygon: true,
         circle: false,
         rectangle: false,
-        marker: true
+        marker: false,
     }
 });
 map.addControl(drawControl);

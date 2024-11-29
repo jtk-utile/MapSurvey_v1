@@ -23,12 +23,14 @@
     <h2>¿Qué te gusta de tu ciudad?</h1>
     <p>Añade puntos o dibuja polígonos en el mapa para dejar tus comentarios.</p>
     <!-- Submit button-->
-    <button id="submit-btn">Pa'lante!</button>
+    
     <!-- map-->    
     <div id="map"></div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <!-- comment box-->
-     <textarea id="comment-box" placeholder="Enter your comment here..." rows="4" cols="50"></textarea>
+    <div id="controls">
+        <textarea id="comment-box" placeholder="Enter your comment here..." rows="4" cols="50"></textarea>
+        <button id="submit-btn">Pa'lante!</button>
+    </div>    
     <!-- Add JS for Plugin -->
     <script src="https://unpkg.com/leaflet-geotiff/dist/leaflet-geotiff.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
