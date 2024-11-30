@@ -7,6 +7,7 @@
 { "type": "Feature", "properties": { "comment": "joey 2" }, "geometry": { "type": "Point", "coordinates": [ -71.040173, 42.397316 ] } },
 { "type": "Feature", "properties": { "comment": "sdf" }, "geometry": { "type": "Point", "coordinates": [ -71.028414, 42.394653 ] } },
 { "type": "Feature", "properties": { "comment": "wq" }, "geometry": { "type": "Point", "coordinates": [ -71.039057, 42.3989 ] } },
-{ "type": "Feature", "properties": { "comment": "palante" }, "geometry": { "type": "Point", "coordinates": [ -71.031504, 42.399724 ] } }
+{ "type": "Feature", "properties": { "comment": "palante" }, "geometry": { "type": "Point", "coordinates": [ -71.031504, 42.399724 ] } },
+{ "type": "Feature", "properties": { "comment": "t" }, "geometry": { "type": "Point", "coordinates": [ -71.04897, 42.405175 ] } }
 ]
 }

@@ -3,12 +3,12 @@
 const map = L.map('map').setView([42.396680895764796, -71.03147400302397], 14); // Adjust coordinates for your starting position
 
 // Add a base layer (MapTiler)
-const key = 'emvkvAlKexCOOCAdiVE9';
-L.tileLayer(`https://api.maptiler.com/tiles/cdf1b0ea-4162-4a6d-bbad-95d66f6163bd/{z}/{x}/{y}.png?key=${key}`, {
-    tileSize: 512,
+L.tileLayer(`http://localhost:5000/{z}/{x}/{y}.png`, {
+    tileSize: 1024,
     zoomOffset: -1,
-    minZoom: 14,
-    attribution: '© <a href="https://www.maptiler.com/copyright/" target="_blank">MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>',
+    minZoom: 2,
+    maxZoom: 18,
+    attribution: 'Utile',
     crossOrigin: true
 }).addTo(map);
 

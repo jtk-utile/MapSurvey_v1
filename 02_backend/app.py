@@ -1,9 +1,11 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 import geopandas as gpd
 from shapely.geometry import shape
 import os
 import pandas as pd
+import sqlite3
+from io import BytesIO
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -13,9 +15,36 @@ CORS(app)  # Enable Cross-Origin Resource Sharing
 DATA_DIR = os.path.join(os.path.dirname(__file__), 'data')
 SUBMISSIONS_FILE = os.path.join(DATA_DIR, 'submissions.geojson')
 PROCESSED_FILE = os.path.join(DATA_DIR, 'processed_data.geojson')
+MBTILES_FILE = os.path.join(DATA_DIR, "ChelseaMentalMap_v4.mbtiles")  # Path to MBTiles file
+
 
 # Ensure data directory exists
 os.makedirs(DATA_DIR, exist_ok=True)
+
+@app.route('/<int:z>/<int:x>/<int:y>.png')
+def serve_tile(z, x, y):
+    try:
+        conn = sqlite3.connect(MBTILES_FILE)
+        cursor = conn.cursor()
+        query = f"""
+            SELECT tile_data FROM tiles 
+            WHERE zoom_level = {z} 
+              AND tile_column = {x} 
+              AND tile_row = {(2 ** z - 1) - y}  -- Flip Y-coordinate if needed
+        """
+        cursor.execute(query)
+        tile_data = cursor.fetchone()
+        conn.close()
+
+        if tile_data:
+            # Wrap the bytes data in a BytesIO object
+            tile_stream = BytesIO(tile_data[0])
+            return send_file(tile_stream, mimetype="image/png")
+        else:
+            return "Tile not found", 404
+    except Exception as e:
+        return f"Error serving tile: {str(e)}", 500
+
 
 # Route to receive user-drawn features
 """
