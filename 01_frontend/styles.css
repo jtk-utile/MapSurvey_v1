@@ -6,41 +6,43 @@
     font-style: normal;
 }
 
+
+/* General Styling */
 body {
     font-family: 'Union', sans-serif;
     margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+
+/* Title and Prompt Section */
+#title-prompt {
+    margin: 20px; /* Center the title and prompt with spacing */
     padding: 10px;
     text-align: center;
 }
 
 
-h2 {
-    margin-top: 5px;
-    margin-bottom: 1px;
+/* Flex Container for horizontal alignment */
+.container {
+    display: flex;                 /* Align items horizontally */
+    align-items: flex-end;         /* Align bottom edges */
+    justify-content: center; /* Distribute space between elements */
+    gap: 2px;                     /* Add space between items */
+    height: 300px;                 /* Ensure enough height for alignment */
+    padding: 5px;                 /* Optional: Add padding inside the container */
+    margin: 0 auto;                /* Center the container horizontally*/
+    box-sizing: border-box;        /* ensure padding doesn't add to width*/
 }
 
-p {
-    margin-top: 5px;
-}
-#map {
-    height: 500px;
-    width: 75%;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-}
-
-#palante-logo {
-    width: 125px; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer;
-}
-
-/* Style the utile link */
+/* Utile Link */
 #utile-link {
-    position: absolute; /* Ensures it's positioned relative to the page */
-    bottom: 80px; /* Distance from the top of the page */
-    left: 20px; /* Distance from the left of the page */
-    z-index: 1000; /* Ensures it stays on top of other elements */
+    display: flex;                 /* Keeps logo centered */
+    align-items: center;           /* Center align logo */
+    justify-content: left;
+    width: 100px;                  /* Explicit width */
 }
 
 /* Style the image */
@@ -48,7 +50,42 @@ p {
     width: 50px; /* Adjust size as needed */
     height: auto; /* Maintains aspect ratio */
     cursor: pointer; /* Indicates the image is clickable */
+    z-index: 1000px;
 }
+
+#map {
+    flex: 1;
+    height: 500px;
+    border: 2px solid #ffcf2f;
+}
+
+/* Style the button */
+#submit-btn {
+    width: 12;
+    background-color: #ffcf2f; /* Green background */
+    color: black; /* White text */
+    font-family: Arial, Helvetica, sans-serif, sans-serif; /* Font family */
+    font-weight: 550;
+    font-size: 12px; /* Font size */
+    padding: 7px 10px; /* Padding around the text */
+    border: solid rgb(207, 40, 179); /* borders */
+    border-width: 2px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+#palante-logo {
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+}
+
+/* Add hover effect */
+#submit-btn:hover {
+    background-color: #fb8e00; /* Darker green on hover */
+}
+
 
 #comment-box {
     width: 75%; /* Adjust width as needed */
@@ -64,23 +101,4 @@ p {
 }
 
 
-/* Style the button */
-#submit-btn {
-    background-color: #ffcf2f; /* Green background */
-    color: black; /* White text */
-    font-family: Arial, Helvetica, sans-serif, sans-serif; /* Font family */
-    font-weight: 550;
-    font-size: 12px; /* Font size */
-    padding: 7px 10px; /* Padding around the text */
-    border: solid rgb(207, 40, 179); /* borders */
-    border-width: 2px;
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: background-color 0.3s; /* Smooth hover effect */
-}
-
-/* Add hover effect */
-#submit-btn:hover {
-    background-color: #fb8e00; /* Darker green on hover */
-}
 

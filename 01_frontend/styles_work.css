@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Union';
+    src: url('fonts\union_regular.otf') format('opentype');
+    /* Add additional font formats if available */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Union', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Title and Prompt Section */
+#title-prompt {
+    margin: 20px auto; /* Center the title and prompt with spacing */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Flex Container for Horizontal Layout */
+.container {
+    display: flex;                  /* Flexbox for horizontal alignment */
+    align-items: flex-end;          /* Align bottom edges of children */
+    justify-content: center;        /* Center the container */
+    gap: 10px;                      /* Space between elements */
+    max-width: 100%;                 /* Restrict total container width */
+    margin: 20px auto;              /* Center container and add spacing */
+    padding: 10px;
+    box-sizing: border-box;         /* Include padding in width calculation */
+}
+
+/* Utile */
+#utile-link {
+    display: flex;                 /* Keeps logo centered */
+    align-items: center;           /* Center align logo */
+    justify-content: right;
+    width: 100px;                  /* Explicit width */
+}
+
+#utile-logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Maintains aspect ratio */
+    cursor: pointer; /* Indicates the image is clickable */
+    z-index: 1000px;
+}
+
+/* Map Styling */
+#map {
+    flex: 1;                        /* Let the map expand to fill remaining space */
+    height: 500px;                  /* Fixed height */
+    border: 2px solid #ffcf2f;      /* Border for visibility */
+}
+
+/* Submit Button */
+#submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;                   /* Fixed button width */
+    height: 100px;                  /* Fixed button height */
+    padding: 0;
+    border: 2px solid rgb(207, 40, 179); /* Border styling */
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+
+#submit-btn img {
+    width: 100%;
+    height: auto;                   /* Maintain aspect ratio for image */
+}
+
+/* Comment Box */
+#comment-section {
+    margin: 20px auto;              /* Center the comment section */
+    padding: 10px;
+}
+
+#comment-box {
+    width: 75%; /* Adjust width as needed */
+    padding: 10px;
+    font-family: 'Arial', sans-serif; /* Change this to your desired font */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #333; /* Text color */
+    background-color: #f9f9f9; /* Optional: Background color */
+    border: 1px solid #ffcf2f;
+    border-width: 2.5px;
+    border-radius: 5px;
+    resize: vertical;
+}

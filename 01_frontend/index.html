@@ -5,36 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chelsea Pa'lante</title>
     <!-- CSS for Leaflet -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_work.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <!-- Add Leaflet plugins -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet-geotiff/dist/leaflet-geotiff.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"/>
 </head>
 <body>
-    <!-- Header for the top logo -->
-    <header>
-        <a href="https://chelsearecord.com/2024/10/11/chelsea-hires-master-plan-consultant/" target="_blank" id="top-logo-link">
-            <img src="images/palante_v1.jpg" alt="Tim's Pa'Lante logo" id="palante-logo">
-        </a>
-    </header>
-
     <!-- Main content: Title and prompt -->
     <div id="title-prompt">
         <h2>¿Qué te gusta de tu ciudad?</h2>
         <p>Añade puntos o dibuja polígonos en el mapa para dejar tus comentarios.</p>
     </div>
 
-    <!-- Map, Utile logo, and Submit button horizontally aligned -->
-    <div id="map-section">
+    <!-- Utile logo, map, Pa'lante submit button -->
+    <div class="container" id="map-section">
+        <!-- Utile logo-->
         <a href="https://www.utiledesign.com/" target="_blank" id="utile-link">
             <img src="images/Utile Logo - Brown.png" alt="Logo" id="utile-logo">
         </a>
+
+        <!-- Map -->
         <div id="map"></div>
-        <button id="submit-btn">Pa'lante!</button>
+
+        <!-- Submit Button with Image -->
+        <button id="submit-btn" title="Pa'lante!">
+            <img src="images/palante_v1.jpg" alt="Submit" id="palante-logo">
+        </button>
     </div>
 
-    <!-- Comment box below -->
+    <!-- Comment box -->
     <div id="comment-section">
         <textarea id="comment-box" placeholder="Enter your comment here..." rows="4" cols="50"></textarea>
     </div>
