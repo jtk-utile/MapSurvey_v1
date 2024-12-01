@@ -9,15 +9,37 @@
 body {
     font-family: 'Union', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     text-align: center;
+}
+
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+
+p {
+    margin-top: 5px;
+}
+#map {
+    height: 500px;
+    width: 75%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+#palante-logo {
+    width: 125px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
 }
 
 /* Style the utile link */
 #utile-link {
     position: absolute; /* Ensures it's positioned relative to the page */
-    bottom: 60px; /* Distance from the top of the page */
-    left: 10px; /* Distance from the left of the page */
+    bottom: 80px; /* Distance from the top of the page */
+    left: 20px; /* Distance from the left of the page */
     z-index: 1000; /* Ensures it stays on top of other elements */
 }
 
@@ -28,38 +50,14 @@ body {
     cursor: pointer; /* Indicates the image is clickable */
 }
 
-/* Style the pa'lante link */
-#top-logo-link {
-    position: absolute;
-    top: 10px; /* Position relative to the top edge */
-    left: 10px; /* Align to the left edge */
-    z-index: 1000; /* Ensure it stays above other elements */
-}
-
-#palante-logo {
-    width: 125px; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer;
-}
-
-/* Style the container */
-#controls {
-    display: flex; /* Enable flexbox */
-    justify-content: right; /* Space out items evenly */
-    align-items: center; /* Align items vertically */
-    gap: 40px;
-    margin-top: 10px; /* Add space above the row */
-    margin-right: 30px;
-}
-
 #comment-box {
-    width: 60%; /* Adjust width as needed */
+    width: 75%; /* Adjust width as needed */
     padding: 10px;
     font-family: 'Arial', sans-serif; /* Change this to your desired font */
     font-size: 14px; /* Adjust font size as needed */
     color: #333; /* Text color */
     background-color: #f9f9f9; /* Optional: Background color */
-    border: 1px solid #a51313;
+    border: 1px solid #ffcf2f;
     border-width: 2.5px;
     border-radius: 5px;
     resize: vertical;
@@ -86,18 +84,3 @@ body {
     background-color: #fb8e00; /* Darker green on hover */
 }
 
-
-h2 {
-    margin-top: 80px;
-    margin-bottom: 1px;
-}
-
-p {
-    margin-top: 5px;
-}
-#map {
-    height: 500px;
-    width: 100%;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-}

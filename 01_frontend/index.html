@@ -12,26 +12,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"/>
 </head>
 <body>
-    <!-- bottom left logo -->
-    <a href="https://www.utiledesign.com/" target="_blank" id="utile-link">
-        <img src="images\Utile Logo - Brown.png" alt="Logo" id="utile-logo">
-    </a>
-    <!-- top left logo-->
-    <a href="https://chelsearecord.com/2024/10/11/chelsea-hires-master-plan-consultant/" target="_blank" id="top-logo-link">
-        <img src="images\palante_v1.jpg" alt="Tim's Pa'Lante logo" id="palante-logo">
-    </a>
-    <h2>¿Qué te gusta de tu ciudad?</h1>
-    <p>Añade puntos o dibuja polígonos en el mapa para dejar tus comentarios.</p>
-    <!-- Submit button-->
-    
-    <!-- map-->    
-    <div id="map"></div>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <div id="controls">
-        <textarea id="comment-box" placeholder="Enter your comment here..." rows="4" cols="50"></textarea>
+    <!-- Header for the top logo -->
+    <header>
+        <a href="https://chelsearecord.com/2024/10/11/chelsea-hires-master-plan-consultant/" target="_blank" id="top-logo-link">
+            <img src="images/palante_v1.jpg" alt="Tim's Pa'Lante logo" id="palante-logo">
+        </a>
+    </header>
+
+    <!-- Main content: Title and prompt -->
+    <div id="title-prompt">
+        <h2>¿Qué te gusta de tu ciudad?</h2>
+        <p>Añade puntos o dibuja polígonos en el mapa para dejar tus comentarios.</p>
+    </div>
+
+    <!-- Map, Utile logo, and Submit button horizontally aligned -->
+    <div id="map-section">
+        <a href="https://www.utiledesign.com/" target="_blank" id="utile-link">
+            <img src="images/Utile Logo - Brown.png" alt="Logo" id="utile-logo">
+        </a>
+        <div id="map"></div>
         <button id="submit-btn">Pa'lante!</button>
-    </div>    
-    <!-- Add JS for Plugin -->
+    </div>
+
+    <!-- Comment box below -->
+    <div id="comment-section">
+        <textarea id="comment-box" placeholder="Enter your comment here..." rows="4" cols="50"></textarea>
+    </div>
+
+    <!-- Add JS for Plugins -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/leaflet-geotiff/dist/leaflet-geotiff.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
     <!-- Custom JS -->

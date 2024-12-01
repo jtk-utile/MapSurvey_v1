@@ -4,11 +4,12 @@ const map = L.map('map').setView([42.396680895764796, -71.03147400302397], 14); 
 
 // Add a base layer (MapTiler)
 L.tileLayer(`http://localhost:5000/{z}/{x}/{y}.png`, {
-    tileSize: 1024,
+    tileSize: 512,
     zoomOffset: -1,
-    minZoom: 2,
+    minZoom: 10,
     maxZoom: 18,
     attribution: 'Utile',
+    detectRetina: true,
     crossOrigin: true
 }).addTo(map);
 

@@ -15,7 +15,7 @@ CORS(app)  # Enable Cross-Origin Resource Sharing
 DATA_DIR = os.path.join(os.path.dirname(__file__), 'data')
 SUBMISSIONS_FILE = os.path.join(DATA_DIR, 'submissions.geojson')
 PROCESSED_FILE = os.path.join(DATA_DIR, 'processed_data.geojson')
-MBTILES_FILE = os.path.join(DATA_DIR, "ChelseaMentalMap_v4.mbtiles")  # Path to MBTiles file
+MBTILES_FILE = os.path.join(DATA_DIR, "ChelseaMentalMap_v6.mbtiles")  # Path to MBTiles file
 
 
 # Ensure data directory exists
